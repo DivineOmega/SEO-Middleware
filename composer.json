@@ -1,0 +1,28 @@
+{
+    "name": "divineomega/seo-middleware",
+    "description": "SEO Middleware - middleware to redirect to HTTPS when in production, and remove www. from URLs",
+    "keywords": ["SEO", "middleware", "SEO middleware", "HTTPS", "SSL", "redirect", "www."],
+    "homepage": "https://github.com/DivineOmega/SEO-Middleware",
+    "license": "LGPL3",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "^5.1|^5.2",
+        "illuminate/http": "^5.1|^5.2",
+        "illuminate/support": "^5.1|^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\SeoMiddleware\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
