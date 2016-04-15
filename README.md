@@ -7,7 +7,7 @@ This package contains various middleware classes that can be uses with Laravel
 
 * Redirecting production HTTP requests to HTTPS
 * Removal of `www.` from requests and redirecting
-* Middleware classes can be applied globall or to specific routes
+* Middleware classes can be applied global or to specific routes
 
 ## Quick Start
 
@@ -18,7 +18,7 @@ This package contains various middleware classes that can be uses with Laravel
   * For removal of `www.` from requests, add `\DivineOmega\SeoMiddleware\Http\Middleware\RemoveWww::class`.
 4. Remember to set the `APP_ENV` variable to `prod` (in the project's `.env` file) when the application is running in production. Some middleware will only function when this is set to allow for easier local development.
 
-## Available Middlewaer Classes
+## Available Middleware Classes
 
 Any of these middleware classes can be used globally, by adding them to
 the `$middleware` array in `apps/Http/Kernel.php` file. They can also be used
@@ -34,7 +34,7 @@ signal for search engine rankings.
 
 The HTTP to HTTPS redirect will only take place if the application environment
 is set to `prod` (production), to aid with local development environments in
-the setup of HTTPS can be difficult and in many cases unecesssary. Changing
+the setup of HTTPS can be difficult and in many cases unnecessary. Changing
 this setting can be set in your project's `.env` file, as shown in the example
 extracts below.
 
