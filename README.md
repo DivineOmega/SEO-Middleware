@@ -19,16 +19,12 @@ The HTTP to HTTPS redirect will only take place if the application environment
 is set to `prod` (production). This can be set in your project's `.env` file,
 as shown in the example extracts below.
 
-### Local development (redirect disabled)
-
 ```
-APP_ENV=local
+APP_ENV=local # Local development (redirect disabled)
 ```
 
-### Production use (redirect enabled)
-
 ```
-APP_ENV=prod
+APP_ENV=prod  # Production use (redirect enabled)
 ```
 
 ## RemoveWww Middleware
