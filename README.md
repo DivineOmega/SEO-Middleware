@@ -1,5 +1,14 @@
 # SEO Middleware
 
+This package contains various middleware classes that can be uses with Laravel
+5.1 and above to easily add various SEO benefits to your site / web application.
+
+## Features
+
+* Redirecting production HTTP requests to HTTPS
+* Removal of `www.` from requests and redirecting
+* Middleware classes can be applied globall or to specific routes
+
 ## Quick Start
 
 1. Add `"divineomega/seo-middleware": "dev-master"` to the `require` section of your `composer.json` file.
@@ -9,10 +18,7 @@
   * For removal of `www.` from requests, add `\DivineOmega\SeoMiddleware\Http\Middleware\RemoveWww::class`.
 4. Remember to set the `APP_ENV` variable to `prod` (in the project's `.env` file) when the application is running in production. Some middleware will only function when this is set to allow for easier local development.
 
-## About
-
-This package contains various middleware classes that can be uses with Laravel
-5.1 and above to easily add various SEO benefits to your site / web application.
+## Available Middlewaer Classes
 
 Any of these middleware classes can be used globally, by adding them to
 the `$middleware` array in `apps/Http/Kernel.php` file. They can also be used
