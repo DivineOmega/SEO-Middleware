@@ -16,8 +16,10 @@ equivalents. The security of websites is becoming an ever increasing ranking
 signal for search engine rankings.
 
 The HTTP to HTTPS redirect will only take place if the application environment
-is set to `prod` (production). This can be set in your project's `.env` file,
-as shown in the example extracts below.
+is set to `prod` (production), to aid with local development environments in
+the setup of HTTPS can be difficult and in many cases unecesssary. Changing
+this setting can be set in your project's `.env` file, as shown in the example 
+extracts below.
 
 ```
 APP_ENV=local # Local development (redirect disabled)
