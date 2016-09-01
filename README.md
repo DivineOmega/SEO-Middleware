@@ -11,7 +11,7 @@ This package contains various middleware classes that can be uses with Laravel
 
 ## Quick Start
 
-1. Add `"divineomega/seo-middleware": "dev-master"` to the `require` section of your `composer.json` file.
+1. Add `"divineomega/seo-middleware": "1.*"` to the `require` section of your `composer.json` file.
 2. Run `composer update divineomega/seo-middleware` (or just `composer update`).
 3. In the `$middleware` array in your `app/Http/Kernel.php` file:
   * For HTTP to HTTPS redirects, add `\DivineOmega\SeoMiddleware\Http\Middleware\HttpsOnly::class`.
