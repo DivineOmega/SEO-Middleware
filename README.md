@@ -11,12 +11,11 @@ This package contains various middleware classes that can be uses with Laravel
 
 ## Quick Start
 
-1. Add `"divineomega/seo-middleware": "1.*"` to the `require` section of your `composer.json` file.
-2. Run `composer update divineomega/seo-middleware` (or just `composer update`).
-3. In the `$middleware` array in your `app/Http/Kernel.php` file:
+1. Run `composer require divineomega/seo-middleware`.
+2. In the `$middleware` array in your `app/Http/Kernel.php` file:
   * For HTTP to HTTPS redirects, add `\DivineOmega\SeoMiddleware\Http\Middleware\HttpsOnly::class`.
   * For removal of `www.` from requests, add `\DivineOmega\SeoMiddleware\Http\Middleware\RemoveWww::class`.
-4. Remember to set the `APP_ENV` variable to `prod` (in the project's `.env` file) when the application is running in production. Some middleware will only function when this is set to allow for easier local development.
+3. Remember to set the `APP_ENV` variable to `prod` (in the project's `.env` file) when the application is running in production. Some middleware will only function when this is set to allow for easier local development.
 
 ## Available Middleware Classes
 
