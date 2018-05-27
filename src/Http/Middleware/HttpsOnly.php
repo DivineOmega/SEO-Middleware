@@ -16,7 +16,7 @@ class HttpsOnly
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && in_array(env('APP_ENV'), ['prod', 'production'])) {
+        if (!$request->secure() && in_array(config('app.env'), ['prod', 'production'])) {
             return redirect()->secure($request->getRequestUri());
         }
 
